@@ -1,0 +1,20 @@
+{
+  "name": "dropout",
+  "version": "0.1.0",
+  "description": "Print this week's Dropout release schedule",
+  "type": "module",
+  "module": "src/cli.ts",
+  "bin": {
+    "dropout": "src/cli.ts"
+  },
+  "scripts": {
+    "start": "bun run src/cli.ts",
+    "build": "bun build ./src/cli.ts --compile --outfile dropout"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
